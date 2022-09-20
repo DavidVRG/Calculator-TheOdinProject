@@ -62,11 +62,12 @@ body{
     padding: 0.5rem;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
 .number:hover{
     background-color: rgba(0,0,0,0.3);
 }
-.operator{
+.operator, .clear, .equal{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,8 +76,9 @@ body{
     padding: 0.5rem;
     color: white;
     cursor: pointer;
+    transition: 0.3s;
 }
-.operator:hover{
+.operator:hover, .clear:hover, .equal:hover{
     background-color: rgba(0,0,0,0.3);
 }
 
