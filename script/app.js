@@ -1,3 +1,4 @@
+/* VARIABLES DECLARATION */
 const amountUI = document.querySelector('.amount');
 const calc1 = document.querySelector('.calc1');
 const calc2 = document.querySelector('.calc2');
@@ -12,6 +13,7 @@ let number2 = [];
 let amount = '';
 let operatorValue = '';
 
+/* NUMBER CLICK EVENT */
 numbers.forEach(number => {
     number.addEventListener('click', () => {
         numberValue = number.getAttribute('data-id')
@@ -24,6 +26,8 @@ numbers.forEach(number => {
         }
     })
 })
+
+/* OPERATOR CLICK EVENT */
 operators.forEach(operator => {
     operator.addEventListener('click', () => {
         operatorValue = operator.getAttribute('data-id');
@@ -38,6 +42,7 @@ operators.forEach(operator => {
     })
 })
 
+/* OPERATOR CLICK EVENT */
 equal.addEventListener('click', () => {
     let number1ParseInt = parseInt(number1);
     let number2ParseInt = parseInt(number2);
@@ -65,12 +70,15 @@ equal.addEventListener('click', () => {
     }
 })
 
+/* CLEAR EVENT */
 clear.addEventListener('click', () => {
-    number1 = [];
-    number2 = [];
     clearUI();
 })
+
+/* CLEAR USER INTERFACE */
 function clearUI(){
+    number1 = [];
+    number2 = [];
     operatorValue = '';
     calc1.innerHTML = '';
     calc2.innerHTML = '';
