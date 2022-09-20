@@ -44,8 +44,8 @@ operators.forEach(operator => {
 
 /* OPERATOR CLICK EVENT */
 equal.addEventListener('click', () => {
-    let number1ParseInt = parseInt(number1);
-    let number2ParseInt = parseInt(number2);
+    let number1ParseInt = Number(number1);
+    let number2ParseInt = Number(number2);
     switch(operatorValue){
         case '-':
             let sub = number1ParseInt-number2ParseInt;
