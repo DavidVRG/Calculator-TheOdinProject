@@ -72,16 +72,12 @@ equal.addEventListener('click', () => {
 
 /* CLEAR EVENT */
 clear.addEventListener('click', () => {
-    clearUI();
-})
-
-/* CLEAR USER INTERFACE */
-function clearUI(){
     number1 = [];
     number2 = [];
+    amount = '';
     operatorValue = '';
     calc1.innerHTML = '';
     calc2.innerHTML = '';
     amountUI.innerHTML = '';
     operatorUI.innerHTML = '';
-}
+})
